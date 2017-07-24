@@ -7,7 +7,7 @@ class recv_data(threading.Thread):
 	def __init__(self, conn,name):
 		threading.Thread.__init__(self)
 		self.con = conn 
-		self.name name
+		self.name = name
 	def run(self):
 		while 1:
 			try:
